@@ -172,5 +172,4 @@
                      &trans    &trans     &kp SPACE        &mo 2   &kp LEFT_CONTROL
             >;
         };
-    };
 };
