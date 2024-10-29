@@ -74,8 +74,8 @@
             bindings = <
   &kp Q         &kp W        &kp E        &kp R          &kp T        &kp Y            &kp U               &kp I            &kp O            &kp P
   &bhm LCTRL A  &bhm LALT S  &bhm LGUI D  &bhm LSHIFT F  &kp G        &kp H            &bhm RIGHT_SHIFT J  &bhm LEFT_GUI K  &bhm LEFT_ALT L  &bhm LCTRL SLASH
-  &kp Z         &kp X        &kp C        &kp V          &lt 1 B      &lt 7 N          &lt 6 M             &kp COMMA        &kp DOT          &mkp MCLK
-                             &mkp LCLK    &lt 1 SPACE    &mkp RCLK    &lt 3 RET        &lt 2 BACKSPACE
+  &kp Z         &kp X        &kp C        &kp V          &lt 1 B      &lt 7 N          &lt 6 M             &kp COMMA        &kp DOT          &kp DELETE
+                             &kp LSHIFT    &lt 1 SPACE    &lt 1 LCTRL    &lt 3 RET        &lt 2 BACKSPACE
             >;
         };
 
@@ -123,8 +123,8 @@
             bindings = <
   &trans     &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans
   &trans     &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans
-  &mkp MCLK  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &mkp LCLK
-                     &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans
+                     &trans  &trans  &trans    &trans  &trans
             >;
         };
 
@@ -150,7 +150,7 @@
             bindings = <
   &kp TAB     &kp Q  &kp W   &kp E  &kp R        &kp F1     &kp F2            &kp F3     &kp F4  &kp F5
   &kp LCTRL   &kp A  &kp S   &kp D  &kp F        &kp COMMA  &kp PERIOD        &none      &none   &none
-  &kp LSHIFT  &kp Z  &kp X   &kp C  &kp V        &mkp LCLK  &mkp MCLK         &mkp RCLK  &none   &to 0
+  &kp LSHIFT  &kp Z  &kp X   &kp C  &kp V        &trans     &trans            &trans     &none   &to 0
                      &mo 10  &mo 9  &kp SPACE    &mo 2      &kp LEFT_CONTROL
             >;
         };
@@ -172,4 +172,5 @@
                      &trans    &trans     &kp SPACE        &mo 2   &kp LEFT_CONTROL
             >;
         };
+    };
 };
