@@ -1,11 +1,11 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_cornesque_LEFT
+config SHIELD_CORNESQUE_LEFT
 	def_bool $(shields_list_contains,cornesque_left)
 
-config SHIELD_cornesque_RIGHT
+config SHIELD_CORNESQUE_RIGHT
 	def_bool $(shields_list_contains,cornesque_right)
 
-config SHIELD_cornesque_DONGLE
+config SHIELD_CORNESQUE_DONGLE
 	def_bool $(shields_list_contains,cornesque_dongle)
