@@ -6,10 +6,6 @@
 
 #include "cornesque.dtsi"
 
-&five_column_transform {
-	col-offset = <5>;
-};
-
 &kscan0 {
 	col-gpios
 		= <&pro_micro 14 GPIO_ACTIVE_HIGH>
