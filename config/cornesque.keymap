@@ -91,30 +91,30 @@
         Lower {
             label = "Lower";
             bindings = <
-  &kp F1  &kp F2   &kp F3    &kp F4     &none         &kp EQUAL  &kp N1  &kp N2  &kp N3        &kp SLASH
-  &kp F5  &kp F6   &kp F7    &kp F8     &none         &kp MINUS  &kp N4  &kp N5  &kp NUMBER_6  &kp ASTRK
-  &kp F9  &kp F10  &kp F11   &kp F12    &none         &kp PLUS   &kp N7  &kp N8  &kp N9        &kp N0
-                   &kp LEFT  &kp RIGHT  &kp DELETE    &kp DEL    &trans  &trans
+  &kp F1  &kp F2   &kp F3    &kp F4     &none         &kp EQUAL   &kp N1         &kp N2    &kp N3        &kp SLASH
+  &kp F5  &kp F6   &kp F7    &kp F8     &none         &kp MINUS   &kp N4         &kp N5    &kp NUMBER_6  &kp ASTRK
+  &kp F9  &kp F10  &kp F11   &kp F12    &none         &kp PLUS    &kp N7         &kp N8    &kp N9        &kp N0
+                   &kp LEFT  &kp RIGHT  &kp DELETE    &kp PERIOD  &kp BACKSPACE  &kp HASH
             >;
         };
 
         Raise {
             label = "Raise";
             bindings = <
-  &kp DOLLAR  &kp PERCENT    &kp CARET         &kp LBRC  &kp RBRC     &kp EQUAL  &kp PLUS      &kp GRAVE  &kp SINGLE_QUOTE   &kp SEMICOLON
-  &kp AMPS    &kp EXCL       &kp QMARK         &kp LBKT  &kp RBKT     &kp UNDER  &kp MINUS     &trans     &kp DOUBLE_QUOTES  &kp COLON
-  &kp AT      &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR  &kp RPAR     &kp HASH   &kp ASTERISK  &kp TILDE  &kp PIPE           &kp BACKSLASH
-                             &trans            &trans    &kp SPACE    &trans     &trans        &trans
+  &kp DOLLAR  &kp PERCENT    &kp CARET         &kp LBRC   &kp RBRC    &kp EQUAL  &kp PLUS      &kp GRAVE  &kp SINGLE_QUOTE   &kp SEMICOLON
+  &kp AMPS    &kp EXCL       &kp QMARK         &kp LBKT   &kp RBKT    &kp UNDER  &kp MINUS     &trans     &kp DOUBLE_QUOTES  &kp COLON
+  &kp AT      &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR   &kp RPAR    &kp HASH   &kp ASTERISK  &kp TILDE  &kp PIPE           &kp BACKSLASH
+                             &trans            &kp SPACE  &trans      &trans     &trans        &trans
             >;
         };
 
         nav-and-fn {
             label = "nav-and-fn";
             bindings = <
-  &kp LS(TAB)  &kp TAB  &kp INSERT  &kp HOME  &kp PAGE_UP        &none       &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)
-  &none        &none    &none       &kp END   &kp PAGE_DOWN      &none       &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT
-  &to 8        &none    &none       &none     &kp PRINTSCREEN    &kp DELETE  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)
-                        &trans      &trans    &kp SPACE          &trans      &trans        &trans
+  &kp LS(TAB)  &kp TAB  &kp INSERT  &kp HOME   &kp PAGE_UP        &none       &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)
+  &none        &none    &none       &kp END    &kp PAGE_DOWN      &none       &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT
+  &to 8        &none    &none       &none      &kp PRINTSCREEN    &kp DELETE  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)
+                        &trans      &kp SPACE  &trans             &trans      &trans        &trans
             >;
         };
 
