@@ -216,10 +216,10 @@
         Base {
             label = "Base";
             bindings = <
-  &kp Q              &kp W  &kp E         &kp R        &kp T        &kp Y      &kp U            &kp I      &kp O    &kp P
-  &bhm LEFT_ALT A    &kp S  &kp D         &kp F        &kp G        &kp H      &kp K            &kp K      &kp L    &bhm RIGHT_ALT SLASH
-  &bhm LEFT_SHIFT Z  &kp X  &kp C         &kp V        &lt 1 B      &lt 7 N    &lt 6 M          &kp COMMA  &kp DOT  &kp LEFT_SHIFT
-                            &kp LEFT_GUI  &lt 5 SPACE  &kp LCTRL    &lt 3 RET  &lt 2 BACKSPACE
+  &kp Q              &kp W  &kp E         &kp R      &kp T        &kp Y      &kp U            &kp I        &kp O    &kp P
+  &bhm LEFT_ALT A    &kp S  &kp D         &kp F      &kp G        &kp H      &kp K            &kp K        &kp L    &bhm RIGHT_ALT SLASH
+  &bhm LEFT_SHIFT Z  &kp X  &kp C         &kp V      &lt 1 B      &lt 7 N    &lt 6 M          &lt 5 COMMA  &kp DOT  &kp LEFT_SHIFT
+                            &kp LEFT_GUI  &kp SPACE  &kp LCTRL    &lt 3 RET  &lt 2 BACKSPACE
             >;
         };
 
@@ -236,20 +236,20 @@
         Raise {
             label = "Raise";
             bindings = <
-  &kp DOLLAR  &kp PERCENT    &kp CARET         &kp LBRC  &kp RBRC     &kp EQUAL  &kp PLUS      &kp GRAVE  &kp SINGLE_QUOTE   &kp SEMICOLON
-  &kp AMPS    &kp EXCL       &kp QMARK         &kp LBKT  &kp RBKT     &kp UNDER  &kp MINUS     &trans     &kp DOUBLE_QUOTES  &kp COLON
-  &kp AT      &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR  &kp RPAR     &kp HASH   &kp ASTERISK  &kp TILDE  &kp PIPE           &kp BACKSLASH
-                             &trans            &trans    &kp SPACE    &trans     &trans
+  &trans  &kp PERCENT  &trans  &trans  &trans    &trans  &kp PLUS  &kp GRAVE  &kp SINGLE_QUOTE   &kp SEMICOLON
+  &trans  &trans       &trans  &trans  &trans    &trans  &trans    &kp CARET  &kp DOUBLE_QUOTES  &kp COLON
+  &trans  &trans       &trans  &trans  &trans    &trans  &trans    &trans     &trans             &kp BACKSLASH
+                       &trans  &trans  &trans    &trans  &trans
             >;
         };
 
         nav-and-fn {
             label = "nav-and-fn";
             bindings = <
-  &kp LS(TAB)  &kp TAB  &kp INSERT  &kp HOME  &kp PAGE_UP        &none       &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)
-  &none        &none    &none       &kp END   &kp PAGE_DOWN      &none       &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT
-  &to 8        &none    &none       &none     &kp PRINTSCREEN    &kp DELETE  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)
-                        &trans      &trans    &kp SPACE          &trans      &trans
+  &kp LS(TAB)  &kp TAB  &trans  &trans           &kp HOME    &kp PG_UP   &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)
+  &none        &none    &none   &kp PRINTSCREEN  &kp END     &kp PG_DN   &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT
+  &to 8        &none    &none   &none            &kp INS     &kp DELETE  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)
+                        &trans  &trans           &trans      &trans      &trans
             >;
         };
 
@@ -265,10 +265,10 @@
 
         Mouse {
             bindings = <
-  &trans     &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans
-  &trans     &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans
-  &mkp MCLK  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &mkp LCLK
-                     &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+  &trans  &trans  &trans     &trans     &trans       &trans  &trans          &trans  &trans  &none
+  &trans  &trans  &trans     &trans     &trans       &trans  &trans          &trans  &trans  &trans
+  &none   &trans  &trans     &trans     &trans       &none   &kp LEFT_SHIFT  &trans  &trans  &trans
+                  &mkp LCLK  &mkp MCLK  &mkp RCLK    &trans  &trans
             >;
         };
 
