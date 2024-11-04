@@ -144,54 +144,69 @@
             key-positions = <26 27>;
         };
 
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <25 15>;
-        };
-
-        asterisk {
-            bindings = <&kp ASTERISK>;
-            key-positions = <16 26>;
-        };
-
-        ampersand {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <17 27>;
-        };
-
         excl {
             bindings = <&kp EXCL>;
-            key-positions = <18 28>;
+            key-positions = <16 17>;
         };
 
         question {
-            bindings = <&kp QMARK>;
-            key-positions = <19 29>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <14 24>;
-        };
-
-        dash {
-            bindings = <&kp MINUS>;
-            key-positions = <23 13>;
-        };
-
-        tilde {
-            bindings = <&kp TILDE>;
-            key-positions = <12 22>;
+            bindings = <&kp QUESTION>;
+            key-positions = <6 7>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <11 21>;
+            key-positions = <12 13>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <2 3>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <21 22>;
+        };
+
+        amp {
+            bindings = <&kp AMPS>;
+            key-positions = <11 12>;
         };
 
         at {
             bindings = <&kp AT>;
-            key-positions = <10 20>;
+            key-positions = <1 2>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <20 21>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <10 11>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <27 28>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <17 18>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <7 8>;
+        };
+
+        caps {
+            bindings = <&kp CLCK>;
+            key-positions = <13 16>;
         };
     };
 
@@ -201,10 +216,10 @@
         Base {
             label = "Base";
             bindings = <
-  &kp Q         &kp W        &kp E        &kp R          &kp T        &kp Y      &kp U               &kp I            &kp O            &kp P
-  &bhm LCTRL A  &bhm LALT S  &bhm LGUI D  &bhm LSHIFT F  &kp G        &kp H      &bhm RIGHT_SHIFT J  &bhm LEFT_GUI K  &bhm LEFT_ALT L  &bhm LCTRL SLASH
-  &kp Z         &kp X        &kp C        &kp V          &lt 1 B      &lt 7 N    &lt 6 M             &kp COMMA        &kp DOT          &mkp MCLK
-                             &mkp LCLK    &lt 1 SPACE    &mkp RCLK    &lt 3 RET  &lt 2 BACKSPACE
+  &kp Q              &kp W  &kp E         &kp R        &kp T        &kp Y      &kp U            &kp I      &kp O    &kp P
+  &bhm LEFT_ALT A    &kp S  &kp D         &kp F        &kp G        &kp H      &kp K            &kp K      &kp L    &bhm RIGHT_ALT SLASH
+  &bhm LEFT_SHIFT Z  &kp X  &kp C         &kp V        &lt 1 B      &lt 7 N    &lt 6 M          &kp COMMA  &kp DOT  &kp LEFT_SHIFT
+                            &kp LEFT_GUI  &lt 5 SPACE  &kp LCTRL    &lt 3 RET  &lt 2 BACKSPACE
             >;
         };
 
