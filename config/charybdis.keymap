@@ -6,15 +6,15 @@
 
 / {
     trackball_listener {
-       compatible = "zmk,input-behavior-listener";
-       device = <&vtrackball>;
-       layers = <0 2 3 4 5>;
-       evt-type = <INPUT_EV_REL>;
-       x-input-code = <INPUT_REL_X>;
-       y-input-code = <INPUT_REL_Y>;
-       scale-multiplier = <1>;
-       scale-divisor = <4>;
-   };
+        compatible = "zmk,input-behavior-listener";
+        device = <&vtrackball>;
+        layers = <0 2 3 4 5>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+        scale-multiplier = <1>;
+        scale-divisor = <4>;
+    };
 
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
@@ -68,8 +68,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <225>;
+            require-prior-idle-ms = <225>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
