@@ -88,8 +88,8 @@
             require-prior-idle-ms = <100>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
+        enter {
+            bindings = <&kp ENTER>;
             key-positions = <29 28>;
             require-prior-idle-ms = <100>;
         };
@@ -170,6 +170,11 @@
             key-positions = <13 16>;
             require-prior-idle-ms = <100>;
         };
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <12 17>;
+        };
     };
 
     keymap {
@@ -178,10 +183,10 @@
         Base {
             label = "Base";
             bindings = <
-  &kp Q              &kp W  &kp E         &kp R      &kp T        &kp Y      &kp U            &kp I        &kp O    &kp P
-  &bhm LEFT_ALT A    &kp S  &kp D         &kp F      &kp G        &kp H      &kp K            &kp K        &kp L    &bhm RIGHT_ALT SLASH
-  &bhm LEFT_SHIFT Z  &kp X  &kp C         &kp V      &lt 3 B      &lt 7 N    &lt 6 M          &lt 5 COMMA  &kp DOT  &kp LEFT_SHIFT
-                            &kp LEFT_GUI  &kp SPACE  &kp LCTRL    &lt 1 RET  &lt 2 BACKSPACE
+  &kp Q              &kp W            &kp E            &kp R        &kp T        &kp Y      &kp U            &kp I             &kp O             &kp P
+  &bhm LEFT_SHIFT A  &bhm LEFT_GUI S  &bhm D LEFT_ALT  &kp F        &kp G        &kp H      &kp K            &bhm RIGHT_ALT K  &bhm RIGHT_GUI L  &bhm RIGHT_SHIFT SEMI
+  &kp Z              &kp X            &kp C            &kp V        &lt 3 B      &lt 7 N    &lt 6 M          &lt 5 COMMA       &kp DOT           &kp SLASH
+                                      &kp LEFT_GUI     &lt 1 SPACE  &kp LCTRL    &lt 1 ESC  &lt 2 BACKSPACE
             >;
         };
 
@@ -198,10 +203,10 @@
         Raise {
             label = "Raise";
             bindings = <
-  &kp N0        &kp N1  &kp N2    &kp N3     &kp MINUS     &kp UNDER    &kp TILDE  &kp GRAVE         &kp CARET          &kp SEMI
-  &kp ASTERISK  &kp N4  &kp N5    &kp N6     &kp PLUS      &kp PERCENT  &kp HASH   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COLON
-  &kp SLASH     &kp N7  &kp N8    &kp N9     &kp EQUAL     &kp DOLLAR   &kp AMPS   &kp AT            &kp PIPE           &kp BACKSLASH
-                        &kp LEFT  &kp RIGHT  &kp DELETE    &kp DEL      &trans
+  &kp N0        &kp N1  &kp N2    &kp N3     &kp MINUS    &kp UNDER    &kp AT    &kp GRAVE         &kp CARET          &kp SEMI
+  &kp ASTERISK  &kp N4  &kp N5    &kp N6     &kp PLUS     &kp PERCENT  &kp HASH  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COLON
+  &kp SLASH     &kp N7  &kp N8    &kp N9     &kp EQUAL    &kp DOLLAR   &kp AMPS  &kp TILDE         &kp PIPE           &kp BACKSLASH
+                        &kp LEFT  &kp RIGHT  &trans       &trans       &trans
             >;
         };
 
