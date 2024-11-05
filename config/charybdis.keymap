@@ -140,7 +140,7 @@
 
         excl {
             bindings = <&kp EXCL>;
-            key-positions = <16 17>;
+            key-positions = <2 1>;
             require-prior-idle-ms = <100>;
         };
 
@@ -179,7 +179,7 @@
             label = "Base";
             bindings = <
   &kp Q         &kp W            &kp E            &kp R              &kp T        &kp Y         &kp U              &kp I            &kp O            &kp P
-  &bhm LCTRL A  &bhm LEFT_ALT S  &bhm LEFT_GUI D  &bhm LEFT_SHIFT F  &kp G        &kp H         &bhm LEFT_SHIFT K  &bhm LEFT_GUI K  &bhm LEFT_ALT L  &bhm LCTRL SLASH
+  &bhm LCTRL A  &bhm LEFT_ALT S  &bhm LEFT_GUI D  &bhm LEFT_SHIFT F  &kp G        &kp H         &bhm LEFT_SHIFT J  &bhm LEFT_GUI K  &bhm LEFT_ALT L  &bhm LCTRL SLASH
   &kp Z         &kp X            &kp C            &kp V              &lt 3 B      &lt 6 N       &lt 5 M            &kp COMMA        &kp DOT          &kp LEFT_SHIFT
                                  &mkp LCLK        &slt 1 SPACE       &mkp RCLK    &slt 1 ENTER  &slt 2 BACKSPACE
             >;
