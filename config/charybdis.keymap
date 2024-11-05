@@ -208,6 +208,11 @@
             bindings = <&mkp MCLK>;
             key-positions = <32 31>;
         };
+
+        delete {
+            bindings = <&none>;
+            key-positions = <27 28>;
+        };
     };
 
     keymap {
@@ -216,20 +221,20 @@
         Base {
             label = "Base";
             bindings = <
-  &kp Q        &kp W       &kp E       &kp R         &kp T        &kp Y        &kp U              &kp I            &kp O            &kp P
-  &td_osmctrl  &td_osmalt  &td_osmgui  &td_osmshift  &kp G        &kp H        &bhm LEFT_SHIFT K  &bhm LEFT_GUI K  &bhm LEFT_ALT L  &bhm LCTRL SLASH
-  &kp Z        &kp X       &kp C       &kp V         &lt 3 B      &lt 6 N      &lt 5 M            &kp COMMA        &kp DOT          &kp LEFT_SHIFT
-                           &mkp LCLK   &lt 1 SPACE   &mkp RCLK    &lt 1 ENTER  &lt 2 BACKSPACE
+  &kp Q         &kp W            &kp E            &kp R              &kp T        &kp Y        &kp U              &kp I            &kp O            &kp P
+  &bhm LCTRL A  &bhm LEFT_ALT S  &bhm LEFT_GUI D  &bhm LEFT_SHIFT F  &kp G        &kp H        &bhm LEFT_SHIFT K  &bhm LEFT_GUI K  &bhm LEFT_ALT L  &bhm LCTRL SLASH
+  &kp Z         &kp X            &kp C            &kp V              &lt 3 B      &lt 6 N      &lt 5 M            &kp COMMA        &kp DOT          &kp LEFT_SHIFT
+                                 &mkp LCLK        &lt 1 SPACE        &mkp RCLK    &lt 1 ENTER  &lt 2 BACKSPACE
             >;
         };
 
         Lower {
             label = "Lower";
             bindings = <
-  &kp LS(TAB)  &kp TAB    &none      &none            &kp HOME    &kp PG_UP   &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)
-  &kp LC(A)    &none      &none      &kp PRINTSCREEN  &kp END     &kp PG_DN   &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT
-  &kp LC(Z)    &kp LC(X)  &kp LC(C)  &kp LC(V)        &kp INS     &kp DELETE  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)
-                          &trans     &trans           &trans      &trans      &trans
+  &kp LS(TAB)  &kp TAB       &none         &kp INSERT      &kp HOME     &kp PG_UP        &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)
+  &sk LCTRL    &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_SHIFT  &kp END      &kp PG_DN        &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT
+  &kp LC(Z)    &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LC(A)    &kp PRINTSCREEN  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)
+                             &trans        &trans          &trans       &trans           &trans
             >;
         };
 
