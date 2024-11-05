@@ -49,7 +49,7 @@
     ib_toggle_layer: ib_toggle_layer {
         compatible = "zmk,input-behavior-tog-layer";
         #binding-cells = <1>;
-        time-to-live-ms = <3500>;
+        time-to-live-ms = <1500>;
     };
 
     behaviors {
@@ -85,12 +85,6 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
-            require-prior-idle-ms = <100>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <29 28>;
             require-prior-idle-ms = <100>;
         };
 
@@ -184,8 +178,8 @@
             label = "Base";
             bindings = <
   &kp Q              &kp W            &kp E            &kp R        &kp T        &kp Y      &kp U            &kp I             &kp O             &kp P
-  &bhm LEFT_SHIFT A  &bhm LEFT_GUI S  &bhm D LEFT_ALT  &kp F        &kp G        &kp H      &kp K            &bhm RIGHT_ALT K  &bhm RIGHT_GUI L  &bhm RIGHT_SHIFT SEMI
-  &kp Z              &kp X            &kp C            &kp V        &lt 3 B      &lt 7 N    &lt 6 M          &lt 5 COMMA       &kp DOT           &kp SLASH
+  &bhm LEFT_SHIFT A  &bhm LEFT_GUI S  &bhm LEFT_ALT D  &kp F        &kp G        &kp H      &kp K            &bhm RIGHT_ALT K  &bhm RIGHT_GUI L  &bhm RIGHT_SHIFT SLASH
+  &kp Z              &kp X            &kp C            &kp V        &lt 3 B      &lt 7 N    &lt 6 M          &lt 5 COMMA       &kp DOT           &kp ENTER
                                       &kp LEFT_GUI     &lt 1 SPACE  &kp LCTRL    &lt 1 ESC  &lt 2 BACKSPACE
             >;
         };
