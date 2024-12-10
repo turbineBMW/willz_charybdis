@@ -200,13 +200,13 @@
             >;
         };
 
-        Lower {
-            label = "Lower";
+        Navigation {
+            label = "Navigation";
             bindings = <
-  &kp LS(TAB)  &kp TAB       &none         &kp INSERT      &kp HOME     &kp PG_UP        &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)
-  &sk LCTRL    &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_SHIFT  &kp END      &kp LEFT         &kp DOWN      &kp UP_ARROW  &kp RIGHT   &none
-  &kp LC(Z)    &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LC(A)    &kp PRINTSCREEN  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)
-                             &trans        &trans          &trans       &trans           &trans
+  &kp LS(TAB)  &kp TAB       &none         &kp INSERT      &kp HOME     &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp LC(LG(Q))
+  &sk LCTRL    &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_SHIFT  &kp END      &kp LEFT      &kp DOWN      &kp UP_ARROW   &kp RIGHT      &kp PAGE_UP
+  &kp LC(Z)    &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LC(A)    &none         &none         &none          &none          &kp PAGE_DOWN
+                             &trans        &trans          &trans       &trans        &trans
             >;
         };
 
