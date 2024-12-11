@@ -95,12 +95,12 @@
         };
 
         bt+boot_right {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <5 6 7 8>;
         };
 
         bt+boot_left {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <1 2 3 4>;
             require-prior-idle-ms = <100>;
         };
@@ -193,40 +193,30 @@
         Base {
             label = "Base";
             bindings = <
-  &kp Q         &kp W            &kp F       &kp P              &kp B        &kp J         &kp L              &kp U            &kp Y            &kp SEMICOLON
-  &bhm LCTRL A  &bhm LEFT_ALT R  &kp S       &bhm LEFT_SHIFT T  &kp G        &kp M         &bhm LEFT_SHIFT N  &bhm LEFT_GUI E  &bhm LEFT_ALT I  &bhm LCTRL O
-  &kp Z         &kp X            &kp C       &kp D              &lt 3 V      &lt 6 K       &lt 5 H            &kp COMMA        &kp DOT          &kp SLASH
-                                 &kp ESCAPE  &slt 1 SPACE       &mkp LCLK    &slt 1 ENTER  &slt 2 BACKSPACE
+  &kp Q  &kp W  &kp F                 &kp P              &kp B        &kp J                     &kp L              &kp U      &kp Y    &kp SEMICOLON
+  &kp A  &kp R  &kp S                 &bhm LEFT_SHIFT T  &kp G        &kp M                     &bhm LEFT_SHIFT N  &kp E      &kp I    &kp O
+  &kp Z  &kp X  &kp C                 &bhm LCTRL D       &kp V        &kp K                     &bhm RCTRL H       &kp COMMA  &kp DOT  &mo 3
+                &bhm LEFT_ALT ESCAPE  &slt 1 SPACE       &mkp LCLK    &bhm RIGHT_GUI BACKSPACE  &slt 2 ENTER
             >;
         };
 
         Navigation {
             label = "Navigation";
             bindings = <
-  &kp LS(TAB)  &kp TAB       &none         &kp INSERT      &kp HOME     &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp LC(LG(Q))
-  &sk LCTRL    &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_SHIFT  &kp END      &kp LEFT      &kp DOWN      &kp UP_ARROW   &kp RIGHT      &kp PAGE_UP
-  &kp LC(Z)    &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LC(A)    &none         &none         &none          &none          &kp PAGE_DOWN
-                             &trans        &trans          &trans       &trans        &trans
+  &none  &none  &none   &none           &none     &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp LC(LG(Q))
+  &none  &none  &none   &kp LEFT_SHIFT  &none     &kp LEFT      &kp DOWN      &kp UP_ARROW   &kp RIGHT      &kp PAGE_UP
+  &none  &none  &none   &none           &none     &none         &none         &none          &none          &kp PAGE_DOWN
+                &trans  &trans          &trans    &trans        &trans
             >;
         };
 
         Raise {
             label = "Raise";
             bindings = <
-  &kp N0        &kp N1  &kp N2    &kp N3    &kp PLUS     &kp PERCENT  &kp AT         &kp CARET         &kp GRAVE          &kp SEMI
-  &kp ASTERISK  &kp N4  &kp N5    &kp N6    &kp MINUS    &kp UNDER    &kp AMPERSAND  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COLON
-  &kp EQUAL     &kp N7  &kp N8    &kp N9    &kp UP       &kp DOLLAR   &kp HASH       &kp TILDE         &kp PIPE           &kp BACKSLASH
-                        &kp LEFT  &kp DOWN  &kp RIGHT    &trans       &trans
-            >;
-        };
-
-        Fn {
-            label = "Fn";
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12
-                  &trans  &trans  &trans    &trans  &trans
+  &kp C_PREVIOUS    &kp N1  &kp N2    &kp N3    &kp PLUS     &kp PERCENT  &kp AT         &kp CARET         &kp GRAVE          &kp SEMI
+  &kp C_NEXT        &kp N4  &kp N5    &kp N6    &kp N0       &kp UNDER    &kp AMPERSAND  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp COLON
+  &kp C_PLAY_PAUSE  &kp N7  &kp N8    &kp N9    &kp UP       &kp DOLLAR   &kp HASH       &kp TILDE         &kp PIPE           &kp BACKSLASH
+                            &kp LEFT  &kp DOWN  &kp RIGHT    &trans       &trans
             >;
         };
 
@@ -237,24 +227,6 @@
   &bt BT_CLR    &none       &none  &none  &none          &none        &none  &none  &none  &none
   &out OUT_TOG  &none       &none  &none  &bootloader    &bootloader  &none  &none  &none  &none
                             &none  &none  &none          &none        &none
-            >;
-        };
-
-        macro-1 {
-            bindings = <
-  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none       &none    &none  &none  &none  &none  &none
-  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &none       &none    &none  &none  &none  &none  &none
-  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &none    &none  &none  &none  &none  &none
-                          &none       &none       &none    &none  &none
-            >;
-        };
-
-        macro-2 {
-            bindings = <
-  &kp LG(LS(N1))  &kp LG(LS(N2))  &kp LS(LG(N3))  &none           &none    &none  &none  &none  &none  &none
-  &kp LG(LS(N4))  &kp LG(LS(N5))  &kp LG(LS(N6))  &none           &none    &none  &none  &none  &none  &none
-  &kp LG(LS(N7))  &kp LG(LS(N8))  &kp LG(LS(N9))  &kp LS(LG(N0))  &none    &none  &none  &none  &none  &none
-                                  &none           &none           &none    &none  &none
             >;
         };
     };
