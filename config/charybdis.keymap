@@ -94,15 +94,89 @@
             require-prior-idle-ms = <100>;
         };
 
-        caps {
-            bindings = <&kp CLCK>;
-            key-positions = <21 28>;
-            require-prior-idle-ms = <100>;
-        };
-
         delete {
             bindings = <&kp DEL>;
             key-positions = <25 26>;
+        };
+
+        leftbracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <23 26>;
+        };
+
+        rightbracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <22 27>;
+        };
+
+        leftparenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <13 16>;
+        };
+
+        rightparenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <12 17>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <6 7>;
+        };
+
+        quote {
+            bindings = <&kp SQT>;
+            key-positions = <16 17>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 12>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <26 27>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <3 2>;
+        };
+
+        warpd {
+            bindings = <&kp LA(LG(Z))>;
+            key-positions = <30 34>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <23 24>;
+        };
+
+        lefttab {
+            bindings = <&kp LA(LG(LEFT))>;
+            key-positions = <12 11>;
+        };
+
+        righttab {
+            bindings = <&kp LA(LG(RIGHT))>;
+            key-positions = <17 18>;
+        };
+
+        movetabright {
+            bindings = <&kp LC(LS(PAGE_DOWN))>;
+            key-positions = <18 19>;
+        };
+
+        movetableft {
+            bindings = <&kp LC(LS(PAGE_UP))>;
+            key-positions = <11 10>;
+        };
+
+        tick {
+            bindings = <&kp GRAVE>;
+            key-positions = <23 22>;
         };
     };
 
