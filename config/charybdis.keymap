@@ -188,7 +188,7 @@
             bindings = <
   &kp Q  &kp W  &kp F                 &kp P              &kp B        &kp J                     &kp L              &kp U      &kp Y    &kp SEMICOLON
   &kp A  &kp R  &kp S                 &bhm LEFT_SHIFT T  &kp G        &kp M                     &bhm LEFT_SHIFT N  &kp E      &kp I    &kp O
-  &kp Z  &kp X  &kp C                 &bhm LCTRL D       &lt 3 V      &kp K                     &bhm RCTRL H       &kp COMMA  &kp DOT  &mo 3
+  &kp Z  &kp X  &kp C                 &bhm LCTRL D       &lt 3 V      &kp K                     &bhm RCTRL H       &kp COMMA  &kp DOT  &lt 3 FSLH
                 &bhm LEFT_ALT ESCAPE  &slt 1 SPACE       &mkp LCLK    &bhm RIGHT_GUI BACKSPACE  &slt 2 ENTER
             >;
         };
